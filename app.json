@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Personal Planner",
+    "slug": "personal-planner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "personalplanner",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.personalplanner.app",
+      "infoPlist": {
+        "NSContactsUsageDescription": "Used to associate contacts with tasks.",
+        "NSCalendarsUsageDescription": "Used to sync events with your calendar."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6366F1"
+      },
+      "package": "com.personalplanner.app",
+      "permissions": [
+        "RECEIVE_SMS",
+        "READ_SMS",
+        "NOTIFICATIONS",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#6366F1",
+          "sounds": []
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "YOUR_EAS_PROJECT_ID"
+      }
+    }
+  }
+}
